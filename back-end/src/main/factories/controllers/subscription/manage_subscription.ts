@@ -1,13 +1,14 @@
 import { ManageSubscriptionService } from "../../../../application/services"
+import { ValidatorAdapter } from "../../../../infrastructure/adapters"
 import { SubscriptionRepository, UserRepository } from "../../../../infrastructure/data/typeorm/repositories"
 import { ManageSubscriptionController } from "../../../../presentation/controllers"
-import { NumberValidation, RequiredFieldValidation, Validation, ValidationComposite } from "../../../../presentation/validations"
+import { EmailValidation, RequiredFieldValidation, Validation, ValidationComposite } from "../../../../presentation/validations"
 
 export const makeManageSubscriptionValidation = () : Validation => {
     const validations : Validation[] = []
     for(const fieldname of ['subscribeTo']){
         validations.push(new RequiredFieldValidation(fieldname))
-        validations.push(new NumberValidation(fieldname, 1))
+        validations.push(new EmailValidation(fieldname, new ValidatorAdapter()))
     }
     return new ValidationComposite(validations)
 }
