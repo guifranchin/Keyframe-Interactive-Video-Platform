@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Nanum+Brush+Script&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+}
