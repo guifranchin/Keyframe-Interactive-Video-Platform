@@ -1,6 +1,16 @@
 import { Comment } from "../../entities";
-import { GetVideoCommentsInterface } from "../../repositories";
 
-export interface GetVideoComments{
-    get(infos: GetVideoCommentsInterface) : Promise<Comment[]>
+export interface GetVideoCommentsServiceInterface {
+  videoId: number;
+  page: number;
+  rows: number;
+  userId: number | null;
+}
+
+export interface CommentDTO extends Comment{
+  evaluation?: boolean | null
+}
+
+export interface GetVideoComments {
+  get(infos: GetVideoCommentsServiceInterface): Promise<CommentDTO[]>;
 }
