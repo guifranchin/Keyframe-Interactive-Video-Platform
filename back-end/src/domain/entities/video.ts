@@ -1,7 +1,7 @@
+import { AbstractEntity } from "./abstract_entity"
 import { User } from "./user"
 
-export interface Video{
-    id?: number
+export interface Video extends AbstractEntity{
     title: string
     thumbnail: string
     path: string
@@ -9,6 +9,6 @@ export interface Video{
     viewsCount?: number
     likesCount?: number
     deslikesCount?: number
-    createdAt?: Date
+    commentCount?: number
     description?: string
 }
