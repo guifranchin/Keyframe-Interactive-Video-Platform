@@ -1,19 +1,68 @@
-# KEYFRAME
+# Keyframe: Interactive Video Platform
 
-Projeto com intuito de aprender programação e raciocínio lógico:
+Keyframe is a video sharing platform that promotes interaction between users through comments and recommendations of popular videos. The platform aims to solve problems faced by other video sharing platforms, such as lack of competition, privacy, and freedom, by offering a more professional and organized user experience. 
 
-O Projeto Keyframe é uma plataforma de compartilhamento de vídeos que promove a interação entre os usuários através de comentários e recomendações de vídeos populares. Além disso, busca resolver problemas enfrentados por outras plataformas de compartilhamento de vídeos, como a falta de competitividade, privacidade e liberdade, oferecendo uma experiência de uso mais profissional e organizada. O projeto visa aplicar conhecimentos adquiridos durante o curso de desenvolvimento de uma plataforma web e ampliar o conhecimento sobre os recursos utilizados, desenvolvendo uma área de uploads de vídeos e uma área de interação entre os usuários no sistema.
-## Veja o desenvolvimento do projeto:
-## 🤝 Contribuição
+The project is developed with Node.js and TypeORM on the back-end, utilizing a PostgreSQL database, and React on the front-end. The platform includes a video upload area and an area of interaction between users in the system.
 
-Projeto aberto para ajuda!
+## Getting Started
 
-Lembre de seguir os requisitos da licensa...
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## 🔖 Licensa
-[![LICENSA](https://img.shields.io/badge/Custom_GPL_3.0-E58080?style=for-the-badge&logo=bookstack&logoColor=white)](/LICENSE)
+### Prerequisites
 
-## 💰 Donate
-PIX: a4eabcdd-1899-48cc-b751-bfd8bb92e96e (chave aleatoria)
+- Node.js
+- TypeORM
+- PostgreSQL
+- React
 
-<p align="center">Copyright © 2022 Guilherme Franchin</p>
+### Installing
+
+1. Clone the repository:
+```bash
+git clone https://github.com/guifranchin/keyframe.git
+```
+
+2. Install back-end dependencies:
+```bash
+cd keyframe/backend
+npm install
+```
+3. Install front-end dependencies:
+```bash
+cd keyframe/frontend
+npm install
+```
+4. Set up the database connection in the .env file
+5. Run the project:
+```bash
+cd keyframe/backend
+npm start
+
+cd keyframe/frontend
+npm start
+```
+
+
+## Built With
+
+* [Node.js](https://nodejs.org/) - JavaScript runtime
+* [TypeORM](https://typeorm.io/) - ORM for TypeScript and JavaScript
+* [PostgreSQL](https://www.postgresql.org/) - Database
+* [React](https://reactjs.org/) - JavaScript library for building user interfaces
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/guifranchin/keyframe/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/guifranchin/keyframe/tags).
+
+## Authors
+
+* **Guilherme** - *Initial work* - [guifranchin](https://github.com/guifranchin)
+* **Fares** - *Initial work* - [Faires12](https://github.com/Faires12)
+* **Gabriel** - *Initial work* - [Vrrl](https://github.com/Vrrl)
+* **Henrique ** - *Initial work* - [PaoFrito](https://github.com/PaoFrito)
+
+See also the list of [contributors](https://github.com/guifranchin/keyframe/contributors) who participated in this project.
